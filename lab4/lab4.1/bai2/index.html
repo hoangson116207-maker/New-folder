@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tea Station - Lab 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MÀN HÌNH 1: NAVIGATION -->
+    <div class="nav-container">
+        <div class="nav">
+            <ul class="nav_list">
+                <li>FEATURES</li>
+                <li>ABOUT</li>
+                <li>PRODUCTS</li>
+                <li>SERVICES</li>
+                <li>CONTACTS</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MÀN HÌNH 2: HEADER -->
+    <!-- Đã thêm ảnh mẫu trực tiếp qua CSS để bạn hình dung -->
+    <div class="header">
+        <h2>Over one hunred flavors of tea</h2>
+        <h1>Specially crafted tea</h1>
+        <a href="#about" class="btn header_btn">Explore</a>
+    </div>
+
+    <!-- MÀN HÌNH 3: FEATURES -->
+    <!-- Phải bọc trong một container để dàn 4 cột ngang nhau -->
+    <div class="features-container">
+        <div class="feature_item">
+            <h3>MADE WITH LOVE</h3>
+            <p>Our tea is made with love...</p>
+        </div>
+        <div class="feature_item">
+            <h3>RELAXATION</h3>
+            <p>Set aside anxiety and relax...</p>
+        </div>
+        <div class="feature_item">
+            <h3>ENERGY</h3>
+            <p>Our tea will energize you...</p>
+        </div>
+        <div class="feature_item">
+            <h3>FAMILY RECIPE</h3>
+            <p>All our recipes are passed...</p>
+        </div>
+    </div>
+
+    <!-- MÀN HÌNH 4 & 6: ABOUT US -->
+    <!-- Bọc flexbox để chia 2 cột Ảnh (trái) và Chữ (phải) -->
+    <div id="about">
+        <div class="about_left">
+            <!-- Thay bằng link ảnh mẫu để hiển thị ngay, khi nộp sửa thành ./images/about-bcg.jpeg -->
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&q=80" width="100%" alt="About Us">
+        </div>
+        <div class="about_right">
+            <p class="subtitle">About Our</p>
+            <h2>TEA STATION</h2>
+            <p>Once upon a time we only had a couple of teapots and enjoyed tea only with our family. Over time, we were able to afford to buy a small tea plantation</p>
+            <p>Now we have a whole teahouse and we delight many people with delicious and hot tea. We serve black long tea, relaxing green and jasmine tea, tea with spices and many others.</p>
+            <!-- MÀN HÌNH 6: NÚT BUTTON -->
+            <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </div>
+
+    <!-- MÀN HÌNH 5: PRODUCTS -->
+    <div class="products-container">
+        <div class="product_item">
+            <div class="product_img">
+                <img src="https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=300&q=80" width="100%" alt="Black Long Tea">
+            </div>
+            <h3 class="product-item_title">BLACK LONG TEA</h3>
+            <div class="product-item_price">
+                <span>$6.99</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

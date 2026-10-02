@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tea Station - Landscape Layout</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 30px 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* KHUNG NGANG TỔNG (Định kích thước 1000px cố định) */
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 1. THANH KHUNG NGANG 4 Ô DẦU TRANG */
+        .top-bar {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f5f5f5;
+            margin-bottom: 35px;
+        }
+        .top-bar td {
+            width: 25%; /* Chia đều 4 khung ngang */
+            padding: 20px 18px;
+            vertical-align: top;
+            box-sizing: border-box;
+            border-right: 2px solid #ffffff; /* Viền cắt trắng giữa các ô */
+        }
+        .top-bar td:last-child {
+            border-right: none;
+        }
+        .top-bar h4 {
+            margin: 0 0 12px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .top-bar p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        /* 2. KHUNG NGANG CHIA ĐỀU 50% - 50% (ABOUT SECTION) */
+        .about-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 45px;
+        }
+        /* Cột Khung Ảnh Ngang (50%) */
+        .about-img-col {
+            width: 50%;
+            vertical-align: top;
+            padding-right: 25px;
+            box-sizing: border-box;
+        }
+        .about-img-col img {
+            width: 100%;
+            height: 320px; /* Chiều cao khung ngang cố định */
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Cột Khung Văn Bản Ngang (50%) */
+        .about-text-col {
+            width: 50%;
+            vertical-align: top;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+        .about-text-col h3 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .about-text-col h2 {
+            margin: 0 0 20px 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .about-text-col p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 18px 0;
+        }
+        .about-text-col a {
+            font-size: 16px;
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        /* 3. KHUNG NGANG 3 CỘT (PRODUCTS SECTION) */
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .prod-col {
+            width: 33.33%; /* 3 khung ngang bằng nhau */
+            vertical-align: top;
+            padding-right: 25px;
+            box-sizing: border-box;
+        }
+        .prod-col:last-child {
+            padding-right: 0;
+        }
+        .prod-col h2 {
+            margin: 0 0 18px 0;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .prod-col p {
+            font-size: 15px;
+            line-height: 1.45;
+            margin: 0 0 35px 0;
+        }
+        .prod-col a {
+            font-size: 16px;
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        /* Khung ảnh sản phẩm hình chữ nhật ngang */
+        .prod-img {
+            width: 100%;
+            height: 210px; /* Khung ảnh nằm ngang chuẩn tỉ lệ */
+            object-fit: cover;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .prod-title {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .prod-price {
+            font-size: 15px;
+            color: #222222;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ================= 1. KHUNG NGANG 4 Ô DẦU TRANG ================= -->
+        <table class="top-bar">
+            <tr>
+                <td>
+                    <h4>Made with love</h4>
+                    <p>Our tea is made with love, from the collection of the leaves to the brewing.</p>
+                </td>
+                <td>
+                    <h4>Relaxation</h4>
+                    <p>Set aside anxiety and relax after a hard day with a cup of hot tea in your hands.</p>
+                </td>
+                <td>
+                    <h4>Energy</h4>
+                    <p>Our tea will energize you with vitamins and invigorate the rest of the day.</p>
+                </td>
+                <td>
+                    <h4>Family recipe</h4>
+                    <p>All our recipes are passed down from generation to generation for a long time.</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- ================= 2. KHUNG NGANG ABOUT OUR TEA STATION (50/50) ================= -->
+        <table class="about-table">
+            <tr>
+                <!-- Khung Ảnh Ngang -->
+                <td class="about-img-col">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800&auto=format&fit=crop&q=80" alt="Tea Kettle">
+                </td>
+                <!-- Khung Văn Bản Ngang bằng kích thước Khung Ảnh -->
+                <td class="about-text-col">
+                    <h3>About Our</h3>
+                    <h2>Tea station</h2>
+                    <p>Once upon a time we only had a couple of teapots and enjoyed tea only with our family. Over time, we were able to afford to buy a small tea plantation</p>
+                    <p>Now we have a whole teahouse and we delight many people with delicious and hot tea. We serve black long tea, relaxing green and jasmine tea, tea with spices and many others.</p>
+                    <a href="#">Learn more</a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- ================= 3. KHUNG NGANG OUR PRODUCTS ================= -->
+        <table class="products-table">
+            <tr>
+                <!-- Cột chữ giới thiệu -->
+                <td class="prod-col">
+                    <h2>OUR PRODUCTS</h2>
+                    <p>Our assortment includes long tea, relaxing and invigorating green tea with spices, lemon juice, jasmine, cinnamon and anise, milk tea and many others.</p>
+                    <a href="#">Inventory</a>
+                </td>
+
+                <!-- Sản phẩm 1 (Khung ảnh ngang) -->
+                <td class="prod-col">
+                    <img class="prod-img" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&auto=format&fit=crop&q=80" alt="Black Long Tea">
+                    <div class="prod-title">BLACK LONG TEA</div>
+                    <div class="prod-price">$ 3.99</div>
+                </td>
+
+                <!-- Sản phẩm 2 (Khung ảnh ngang) -->
+                <td class="prod-col">
+                    <img class="prod-img" src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=600&auto=format&fit=crop&q=80" alt="Green Tea with Jasmine">
+                    <div class="prod-title">GREEN TEA WITH JASMINE</div>
+                    <div class="prod-price">$ 4.99</div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

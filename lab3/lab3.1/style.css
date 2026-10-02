@@ -1,0 +1,35 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 20px 30px;
+}
+
+/* Định dạng container chính với độ rộng đúng chuẩn để chữ ngắt dòng so le y hệt hình */
+#features {
+    width: 100%;
+    max-width: 270px; 
+}
+
+/* Định dạng từng mục */
+.feature_item {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Định dạng tiêu đề chữ xanh lá */
+.feature_title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #698f3f; /* Màu xanh lá chuẩn */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Định dạng đoạn văn bản mô tả */
+.feature_text {
+    font-size: 0.95rem;
+    color: #3a3e3b; /* Màu chữ xám đậm */
+    line-height: 1.4;
+    margin-top: 0;
+}

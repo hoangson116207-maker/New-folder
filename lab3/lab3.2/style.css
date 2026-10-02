@@ -1,0 +1,177 @@
+
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+html {
+    font-size: 62.6%;
+}
+
+body {
+    font-family: "Catamaran", sans-serif;
+}
+
+
+.nav_list {
+    list-style: none;
+}
+
+.nav_link {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: calc(0.7rem - 0.4rem);
+    color: #3a3e3b;
+}
+
+
+.header {
+    min-height: 100vh;
+    background-color: #e5e5e5;
+}
+
+.header h2 {
+    font-family: "Grand Hotel", cursive;
+    font-size: 3rem;
+    color: #698f3f;
+    letter-spacing: calc(0.7rem * 1.2);
+}
+
+.header h1 {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 0.7rem;
+}
+
+#features {
+}
+
+.feature_item {
+    width: 25%;
+    text-align: center;
+}
+
+.feature_title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: calc(0.7rem - 0.2rem);
+    color: #698f3f;
+}
+
+.feature_text {
+    font-size: 1.6rem;
+    color: #3a3e3b;
+}
+
+.about_left, .about_right {
+    width: 50%;
+}
+
+.heading_first {
+    font-family: "Grand Hotel", cursive;
+    font-size: 3rem;
+    color: #698f3f;
+    letter-spacing: calc(0.7rem * 1.2);
+}
+
+.heading_second {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    color: #3a3e3b;
+}
+
+.heading-second--white {
+    color: #fff;
+}
+
+.about_text {
+    font-size: 1.8rem;
+}
+
+.btn:link, .btn:visited {
+    color: #3a3e3b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: calc(0.7rem - 0.5rem);
+}
+
+.btn:hover {
+    color: #e5e5e5;
+}
+
+#product {
+    background-color: #3a3e3b;
+}
+
+.product_item {
+    width: 30%;
+}
+
+.products_text {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.product-item_title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: calc(0.7rem - 0.3rem);
+}
+
+.product-item_price {
+    font-family: "Grand Hotel", cursive;
+    font-size: 2.6rem;
+    color: #698f3f;
+    font-weight: 700;
+}
+
+.product-item_price span {
+    margin-right: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.contact {
+    background: #f1f5f8;
+}
+
+.contact-info, .contact-form {
+    width: 50%;
+}
+
+.contact-info {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.contact-form {
+    background: #fff;
+    text-align: center;
+}
+
+.contact-form h3 {
+    color: #617d98;
+}
+
+.form-control {
+    width: 100%;
+    background: #f1f5f8;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+
+.form-control::placeholder {
+    font-family: "Catamaran", sans-serif;
+    color: #102a42;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+
+.submit-btn {
+    width: 100%;
+}

@@ -1,0 +1,127 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Khung chứa toàn bộ trang */
+.container {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header / Banner */
+.header {
+    background-color: #004085;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Thanh Menu điều hướng */
+.navbar {
+    background-color: #0056b3;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar ul li a:hover {
+    background-color: #003d80;
+}
+
+/* Bố cục phần nội dung chính (Flexbox Layout) */
+.main-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Cột nội dung bên trái */
+.content {
+    flex: 3;
+}
+
+.content h2 {
+    color: #0056b3;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Cột Sidebar bên phải */
+.sidebar {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+}
+
+.sidebar h3 {
+    color: #004085;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Chân trang Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

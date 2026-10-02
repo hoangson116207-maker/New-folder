@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 - Form Đăng Ký</title>
+</head>
+<body>
+    <h2>FORM ĐĂNG KÝ</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="fullname">Họ và tên:</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <br>
+        <div>
+            <label>Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="Nam" checked>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+        </div>
+        <br>
+        <div>
+            <label>Sở thích:</label><br>
+            <input type="checkbox" id="travel" name="hobby[]" value="Du lịch" checked>
+            <label for="travel">Du lịch</label>
+            <input type="checkbox" id="music" name="hobby[]" value="Âm nhạc">
+            <label for="music">Âm nhạc</label>
+            <input type="checkbox" id="sports" name="hobby[]" value="Thể thao">
+            <label for="sports">Thể thao</label>
+        </div>
+        <br>
+        <div>
+            <label for="nationality">Quốc tịch:</label><br>
+            <select id="nationality" name="nationality">
+                <option value="vn" selected>Việt Nam</option>
+                <option value="us">Mỹ</option>
+                <option value="jp">Nhật Bản</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="avatar">Hình ảnh đại diện:</label><br>
+            <input type="file" id="avatar" name="avatar">
+        </div>
+        <br>
+        <div>
+            <label for="note">Ghi chú:</label><br>
+            <textarea id="note" name="note" rows="4" cols="40"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Đăng ký">
+        </div>
+    </form>
+</body>
+</html>

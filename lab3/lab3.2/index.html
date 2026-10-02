@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3.2: Specially Crafted Tea</title>
+    <style>
+        /* Yêu cầu chung */
+        @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+        html {
+            font-size: 62.6%;
+        }
+
+        body {
+            font-family: "Catamaran", sans-serif;
+        }
+
+        /* Tổ chức menu */
+        .nav_list {
+            list-style: none;
+        }
+
+        .nav_link {
+            font-family: "Catamaran", sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: calc(0.7rem - 0.4rem);
+            color: #3a3e3b;
+        }
+
+        /* Tổ chức banner */
+        .header {
+            min-height: 100vh;
+            background-color: #e5e5e5;
+        }
+
+        .header h2 {
+            font-family: "Grand Hotel", cursive;
+            font-size: 3rem;
+            color: #698f3f;
+            letter-spacing: calc(0.7rem * 1.2);
+        }
+
+        .header h1 {
+            font-family: "Catamaran", sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 6rem;
+            letter-spacing: 0.7rem;
+        }
+
+        /* Nút bấm (Button) */
+        .btn:link, .btn:visited {
+            color: #3a3e3b;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: calc(0.7rem - 0.5rem);
+        }
+
+        .btn:hover {
+            color: #e5e5e5;
+        }
+
+        /* Features */
+        /* #features { background-color:aquamarine; } */
+        .feature_item {
+            width: 25%;
+            text-align: center;
+        }
+
+        .feature_title {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: calc(0.7rem - 0.2rem);
+            color: #698f3f;
+        }
+
+        .feature_text {
+            font-size: 1.6rem;
+            color: #3a3e3b;
+        }
+
+        /* About */
+        .about_left, .about_right {
+            width: 50%;
+        }
+
+        .heading_first {
+            font-family: "Grand Hotel", cursive;
+            font-size: 3rem;
+            color: #698f3f;
+            letter-spacing: calc(0.7rem * 1.2);
+        }
+
+        .heading_second {
+            font-size: 3.4rem;
+            text-transform: uppercase;
+            color: #3a3e3b;
+        }
+
+        .heading-second--white {
+            color: #fff;
+        }
+
+        .about_text {
+            font-size: 1.8rem;
+        }
+
+        /* Products */
+        #product {
+            background-color: #3a3e3b;
+        }
+
+        .product_item {
+            width: 30%;
+        }
+
+        .products_text {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+
+        .product-item_title {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: calc(0.7rem - 0.3rem);
+        }
+
+        .product-item_price {
+            font-family: "Grand Hotel", cursive;
+            font-size: 2.6rem;
+            color: #698f3f;
+            font-weight: 700;
+        }
+
+        .product-item_price span {
+            margin-right: 1rem;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        /* Contacts */
+        .contact {
+            background: #f1f5f8;
+        }
+
+        .contact-info, .contact-form {
+            width: 50%;
+        }
+
+        .contact-info {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
+
+        .contact-form {
+            background: #fff;
+            text-align: center;
+        }
+
+        .contact-form h3 {
+            color: #617d98;
+        }
+
+        .form-control {
+            width: 100%;
+            background: #f1f5f8;
+            text-transform: uppercase;
+            letter-spacing: 0.7rem;
+        }
+
+        .form-control::placeholder {
+            font-family: "Catamaran", sans-serif;
+            color: #102a42;
+            text-transform: uppercase;
+            letter-spacing: 0.7rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tổ chức menu -->
+    <ul class="nav_list">
+        <li class="nav_item"><a href="#features" class="nav_link">Features</a></li>
+        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+        <li class="nav_item"><a href="#products" class="nav_link">Products</a></li>
+        <li class="nav_item"><a href="#services" class="nav_link">Services</a></li>
+        <li class="nav_item"><a href="#contacts" class="nav_link">Contacts</a></li>
+    </ul>
+
+    <!-- Tổ chức banner -->
+    <div class="header">
+        <h2>Over one hunred flavors of tea</h2>
+        <h1>Specially crafted tea</h1>
+        <a href="#about" class="btn">Explore</a>
+    </div>
+
+    <!-- Tổ chức nội dung features -->
+    <div id="features">
+        <div class="feature_item">
+            <h4 class="feature_title">Made with love</h4>
+            <p class="feature_text">Our tea is made with love, from the collection of the leaves to the brewing.</p>
+        </div>
+        <div class="feature_item">
+            <h4 class="feature_title">Relaxation</h4>
+            <p class="feature_text">Set aside anxiety and relax after a hard day with a cup of hot tea in your hands.</p>
+        </div>
+        <div class="feature_item">
+            <h4 class="feature_title">Energy</h4>
+            <p class="feature_text">Our tea will energize you with vitamins and invigorate the rest of the day.</p>
+        </div>
+        <div class="feature_item">
+            <h4 class="feature_title">Family Recipe</h4>
+            <p class="feature_text">All our recipes are passed down from generation to generation for a long time.</p>
+        </div>
+    </div>
+
+    <!-- Tổ chức nội dung about -->
+    <div id="about">
+        <div class="about_left">
+            <img src="./images/about-bcg.jpeg" width="100%" alt="About Us">
+        </div>
+        <div class="about_right">
+            <div class="about_content">
+                <h3 class="heading_first">About Our</h3>
+                <h2 class="heading_second">Tea station</h2>
+                <p class="about_text">Once upon a time we only had a couple of teapots and enjoyed tea only with our family. Over time, we were able to afford to buy a small tea plantation</p>
+                <p class="about_text">Now we have a whole teahouse and we delight many people with delicious and hot tea. We serve black long tea, relaxing green and jasmine tea, tea with spices and many others.</p>
+                <a href="#features" class="btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tổ chức nội dung products -->
+    <div id="product">
+        <div class="product_item">
+            <h3 class="heading_first">Check Out</h3>
+            <h2 class="heading_second heading-second--white">Our products</h2>
+            <p class="products_text">Our assortment includes long tea, relaxing and invigorating green tea with spices, lemon juice, jasmine, cinnamon and anise, milk tea and many others.</p>
+            <a href="#" class="btn">Inventory</a>
+        </div>
+        <div class="product_item">
+            <img src="./images/product-1.jpeg" width="80%" alt="Black long tea"><br>
+            <h5 class="product-item_title">Black long tea</h5>
+            <p class="product-item_price"><span>$</span> 3.99</p>
+        </div>
+        <div class="product_item">
+            <img src="./images/product-2.jpeg" width="80%" alt="Green tea with jasmine"><br>
+            <h5 class="product-item_title">Green tea with jasmine</h5>
+            <p class="product-item_price"><span>$</span> 4.99</p>
+        </div>
+    </div>
+
+    <!-- Tổ chức nội dung contacts -->
+    <div class="contact">
+        <!-- contact info -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3 class="heading_first">address</h3>
+                <p class="contact-info">523 N Fairfax Ave <br /> Los Angeles, CA 90048</p>
+            </div>
+            <div class="contact-item">
+                <h3 class="heading_first">email</h3>
+                <p class="contact-info">email@email.com</p>
+            </div>
+            <div class="contact-item">
+                <h3 class="heading_first">telephone</h3>
+                <p class="contact-info">+123 456 789</p>
+            </div>
+        </div>
+        <!-- contact form -->
+        <div class="contact-form">
+            <h3 class="heading_first">contact us</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="name" class="form-control" name="name" />
+                    <input type="email" placeholder="email" class="form-control" name="email" />
+                    <textarea name="message" placeholder="message" class="form-control" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">submit here</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
