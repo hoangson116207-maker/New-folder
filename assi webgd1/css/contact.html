@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ TechGear để được tư vấn sản phẩm, bảo hành và hỗ trợ đơn hàng.">
+    <title>Liên hệ — TechGear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="site-header"><div class="header-container"><a class="brand" href="index.html" aria-label="TechGear, trang chủ"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a><nav aria-label="Điều hướng chính"><ul class="nav-list"><li><a href="index.html">Trang chủ</a></li><li><a href="products.html">Sản phẩm</a></li><li><a class="active" aria-current="page" href="contact.html">Liên hệ</a></li><li><a href="feedback.html">Góp ý</a></li></ul></nav><button class="cart-link" type="button" data-open-cart aria-label="Mở giỏ hàng, 0 sản phẩm">Giỏ hàng <span class="cart-count" data-cart-count>0</span></button></div></header>
+    <main>
+        <section class="page-intro page-shell"><p class="eyebrow"><span class="eyebrow-line"></span> Luôn sẵn lòng hỗ trợ</p><h1>Nói với tụi mình<br><span>điều bạn đang cần.</span></h1><p>Tư vấn chọn gear, bảo hành hay một câu hỏi nhỏ — cứ gửi nhé.</p></section>
+        <section class="contact-layout page-shell">
+            <div class="contact-details"><p class="eyebrow">Kết nối với TechGear</p><h2>Người thật.<br>Hỗ trợ thật.</h2><p class="contact-lead">Bọn mình thường phản hồi trong giờ làm việc, từ 9:00 đến 18:00 mỗi ngày.</p><a class="contact-detail" href="tel:0988000000"><span class="detail-icon">↗</span><span><small>GỌI CHO TỤI MÌNH</small><strong>0988 000 000</strong></span></a><a class="contact-detail" href="mailto:hello@techgear.vn"><span class="detail-icon">@</span><span><small>GỬI EMAIL</small><strong>hello@techgear.vn</strong></span></a><div class="contact-detail"><span class="detail-icon">⌖</span><span><small>GHÉ CỬA HÀNG</small><strong>Số 1 Trịnh Văn Bô, Nam Từ Liêm<br>Hà Nội, Việt Nam</strong></span></div></div>
+            <form class="form-panel" data-api="/api/contact">
+                <p class="eyebrow">Gửi lời nhắn</p><h2>Bắt đầu cuộc trò chuyện</h2>
+                <div class="form-row"><div class="form-group"><label for="name">Họ và tên</label><input type="text" id="name" name="name" placeholder="Tên của bạn" autocomplete="name" required></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="ban@email.com" autocomplete="email" required></div></div>
+                <div class="form-group"><label for="topic">Bạn cần hỗ trợ về</label><select id="topic" name="topic"><option>Tư vấn sản phẩm</option><option>Đơn hàng & giao nhận</option><option>Bảo hành & đổi trả</option><option>Khác</option></select></div>
+                <div class="form-group"><label for="message">Lời nhắn</label><textarea id="message" name="message" rows="5" placeholder="Tụi mình có thể giúp gì cho bạn?" required></textarea></div>
+                <button class="button button-dark" type="submit">Gửi lời nhắn <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title"><div class="cart-dialog-head"><div><p class="eyebrow">GIỎ HÀNG CỦA BẠN</p><h2 id="cart-title">Đồ bạn đã chọn</h2></div><button class="icon-button" type="button" data-close-cart aria-label="Đóng giỏ hàng">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-dialog-foot"><div class="cart-total"><span>Tạm tính</span><strong data-cart-total>0₫</strong></div><p>Phí giao hàng sẽ được xác nhận sau.</p><button class="button button-dark checkout-start" type="button" data-show-checkout>Tiếp tục đặt hàng <span aria-hidden="true">↗</span></button><p class="form-status" data-checkout-status role="status" aria-live="polite"></p><form class="checkout-form" data-checkout-form hidden><div class="form-row"><div class="form-group"><label for="order-name">Họ và tên</label><input id="order-name" name="name" type="text" autocomplete="name" required></div><div class="form-group"><label for="order-email">Email</label><input id="order-email" name="email" type="email" autocomplete="email" required></div></div><div class="form-group"><label for="order-phone">Số điện thoại</label><input id="order-phone" name="phone" type="tel" autocomplete="tel" required></div><div class="form-group"><label for="order-address">Địa chỉ nhận hàng</label><textarea id="order-address" name="address" rows="2" autocomplete="street-address" required></textarea></div><button class="button button-dark" type="submit">Xác nhận đặt hàng <span aria-hidden="true">↗</span></button></form></div></dialog>
+    <footer class="site-footer"><div class="footer-main page-shell"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a><p>Thiết bị tốt, cảm hứng tốt.<br>Cho góc máy mang dấu ấn của bạn.</p></div><div><h2>Khám phá</h2><a href="products.html">Tất cả sản phẩm</a><a href="contact.html">Liên hệ & hỗ trợ</a><a href="feedback.html">Gửi góp ý</a></div><div><h2>Ghé thăm</h2><p>Số 1 Trịnh Văn Bô, Nam Từ Liêm<br>Hà Nội, Việt Nam</p><a href="tel:0988000000">0988 000 000</a><a href="mailto:hello@techgear.vn">hello@techgear.vn</a></div></div><div class="footer-bottom page-shell"><span>© 2026 TechGear</span><span>Được làm cho những người mê gear.</span></div></footer>
+</body>
+</html>

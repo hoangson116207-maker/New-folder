@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá bàn phím cơ, chuột gaming và tai nghe được tuyển chọn tại TechGear.">
+    <title>Sản phẩm — TechGear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html" aria-label="TechGear, trang chủ"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a>
+            <nav aria-label="Điều hướng chính"><ul class="nav-list"><li><a href="index.html">Trang chủ</a></li><li><a class="active" aria-current="page" href="products.html">Sản phẩm</a></li><li><a href="contact.html">Liên hệ</a></li><li><a href="feedback.html">Góp ý</a></li></ul></nav>
+            <button class="cart-link" type="button" data-open-cart aria-label="Mở giỏ hàng, 0 sản phẩm">Giỏ hàng <span class="cart-count" data-cart-count>0</span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro page-shell"><p class="eyebrow"><span class="eyebrow-line"></span> Cửa hàng TechGear</p><h1>Chọn gear.<br><span>Chơi theo cách bạn.</span></h1><p>Thiết bị hợp gu, thông số hợp nhu cầu, mức giá rõ ràng.</p></section>
+        <section class="catalog page-shell" id="danh-sach">
+            <div class="catalog-toolbar"><div class="filter-list" role="group" aria-label="Lọc theo danh mục"><button class="filter-button is-selected" type="button" data-filter="all">Tất cả</button><button class="filter-button" type="button" data-filter="keyboard">Bàn phím</button><button class="filter-button" type="button" data-filter="mouse">Chuột</button><button class="filter-button" type="button" data-filter="audio">Tai nghe</button><button class="filter-button" type="button" data-filter="accessory">Phụ kiện</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="product-search" placeholder="Tìm sản phẩm..." aria-label="Tìm sản phẩm"></label></div>
+            <p class="result-count" id="result-count" aria-live="polite">6 sản phẩm</p>
+            <div class="product-grid catalog-grid" data-products-grid></div>
+            <p class="empty-state" id="empty-state" hidden>Không tìm thấy sản phẩm phù hợp. Thử từ khóa khác nhé.</p>
+        </section>
+        <section class="service-banner page-shell"><div><p class="eyebrow">Chưa biết chọn món nào?</p><h2>Hỏi người mê gear.</h2><p>Đội ngũ TechGear sẵn sàng tư vấn theo nhu cầu và ngân sách của bạn.</p></div><a class="button button-light" href="contact.html">Liên hệ tư vấn <span aria-hidden="true">↗</span></a></section>
+    </main>
+
+    <dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title"><div class="cart-dialog-head"><div><p class="eyebrow">GIỎ HÀNG CỦA BẠN</p><h2 id="cart-title">Đồ bạn đã chọn</h2></div><button class="icon-button" type="button" data-close-cart aria-label="Đóng giỏ hàng">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-dialog-foot"><div class="cart-total"><span>Tạm tính</span><strong data-cart-total>0₫</strong></div><p>Phí giao hàng sẽ được xác nhận sau.</p><button class="button button-dark checkout-start" type="button" data-show-checkout>Tiếp tục đặt hàng <span aria-hidden="true">↗</span></button><p class="form-status" data-checkout-status role="status" aria-live="polite"></p><form class="checkout-form" data-checkout-form hidden><div class="form-row"><div class="form-group"><label for="order-name">Họ và tên</label><input id="order-name" name="name" type="text" autocomplete="name" required></div><div class="form-group"><label for="order-email">Email</label><input id="order-email" name="email" type="email" autocomplete="email" required></div></div><div class="form-group"><label for="order-phone">Số điện thoại</label><input id="order-phone" name="phone" type="tel" autocomplete="tel" required></div><div class="form-group"><label for="order-address">Địa chỉ nhận hàng</label><textarea id="order-address" name="address" rows="2" autocomplete="street-address" required></textarea></div><button class="button button-dark" type="submit">Xác nhận đặt hàng <span aria-hidden="true">↗</span></button></form></div></dialog>
+    <footer class="site-footer"><div class="footer-main page-shell"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a><p>Thiết bị tốt, cảm hứng tốt.<br>Cho góc máy mang dấu ấn của bạn.</p></div><div><h2>Khám phá</h2><a href="products.html">Tất cả sản phẩm</a><a href="contact.html">Liên hệ & hỗ trợ</a><a href="feedback.html">Gửi góp ý</a></div><div><h2>Ghé thăm</h2><p>Số 1 Trịnh Văn Bô, Nam Từ Liêm<br>Hà Nội, Việt Nam</p><a href="tel:0988000000">0988 000 000</a><a href="mailto:hello@techgear.vn">hello@techgear.vn</a></div></div><div class="footer-bottom page-shell"><span>© 2026 TechGear</span><span>Được làm cho những người mê gear.</span></div></footer>
+</body>
+</html>

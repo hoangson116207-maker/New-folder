@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chia sẻ trải nghiệm và góp ý để TechGear phục vụ bạn tốt hơn.">
+    <title>Góp ý — TechGear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="site-header"><div class="header-container"><a class="brand" href="index.html" aria-label="TechGear, trang chủ"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a><nav aria-label="Điều hướng chính"><ul class="nav-list"><li><a href="index.html">Trang chủ</a></li><li><a href="products.html">Sản phẩm</a></li><li><a href="contact.html">Liên hệ</a></li><li><a class="active" aria-current="page" href="feedback.html">Góp ý</a></li></ul></nav><button class="cart-link" type="button" data-open-cart aria-label="Mở giỏ hàng, 0 sản phẩm">Giỏ hàng <span class="cart-count" data-cart-count>0</span></button></div></header>
+    <main>
+        <section class="page-intro page-shell"><p class="eyebrow"><span class="eyebrow-line"></span> Tụi mình luôn lắng nghe</p><h1>Góp ý của bạn<br><span>làm tụi mình tốt hơn.</span></h1><p>Mất một phút chia sẻ, giúp trải nghiệm TechGear ngày một tốt hơn.</p></section>
+        <section class="feedback-layout page-shell">
+            <div class="feedback-note"><span class="quote-mark">“</span><blockquote>Chúng mình tin rằng gear tốt là gear hợp với chính bạn.</blockquote><p>Mỗi phản hồi đều được đội ngũ đọc và ghi nhận. Cảm ơn bạn đã giúp TechGear hoàn thiện hơn từng ngày.</p><div class="feedback-signature"><span class="brand-mark">T</span><span>Đội ngũ TechGear</span></div></div>
+            <form class="form-panel" data-feedback-form>
+                <p class="eyebrow">Chia sẻ trải nghiệm</p><h2>Bạn thấy thế nào?</h2>
+                <div class="form-group"><label for="fb-name">Họ và tên</label><input type="text" id="fb-name" name="name" placeholder="Tên của bạn" autocomplete="name" required></div>
+                <div class="form-group"><label for="rating">Mức độ hài lòng</label><select id="rating" name="rating"><option value="5">★★★★★ — Rất hài lòng</option><option value="4">★★★★☆ — Hài lòng</option><option value="3">★★★☆☆ — Bình thường</option><option value="2">★★☆☆☆ — Cần cải thiện</option><option value="1">★☆☆☆☆ — Chưa hài lòng</option></select></div>
+                <div class="form-group"><label for="feedback-content">Ý kiến đóng góp</label><textarea id="feedback-content" name="message" rows="5" placeholder="Điều gì làm bạn vui? Điều gì có thể tốt hơn?" required></textarea></div>
+                <button class="button button-dark" type="submit">Gửi góp ý <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title"><div class="cart-dialog-head"><div><p class="eyebrow">GIỎ HÀNG CỦA BẠN</p><h2 id="cart-title">Đồ bạn đã chọn</h2></div><button class="icon-button" type="button" data-close-cart aria-label="Đóng giỏ hàng">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-dialog-foot"><div class="cart-total"><span>Tạm tính</span><strong data-cart-total>0₫</strong></div><p>Phí giao hàng sẽ được xác nhận khi tư vấn đơn.</p><a class="button button-dark" href="contact.html">Đặt hàng qua tư vấn <span aria-hidden="true">↗</span></a></div></dialog>
+    <footer class="site-footer"><div class="footer-main page-shell"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a><p>Thiết bị tốt, cảm hứng tốt.<br>Cho góc máy mang dấu ấn của bạn.</p></div><div><h2>Khám phá</h2><a href="products.html">Tất cả sản phẩm</a><a href="contact.html">Liên hệ & hỗ trợ</a><a href="feedback.html">Gửi góp ý</a></div><div><h2>Ghé thăm</h2><p>Số 1 Trịnh Văn Bô, Nam Từ Liêm<br>Hà Nội, Việt Nam</p><a href="tel:0988000000">0988 000 000</a><a href="mailto:hello@techgear.vn">hello@techgear.vn</a></div></div><div class="footer-bottom page-shell"><span>© 2026 TechGear</span><span>Được làm cho những người mê gear.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quản trị đơn hàng TechGear.">
+    <title>Quản trị — TechGear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html" aria-label="TechGear, trang chủ"><span class="brand-mark">T</span>techgear<span class="brand-dot">.</span></a>
+            <nav aria-label="Điều hướng chính"><ul class="nav-list"><li><a href="index.html">Cửa hàng</a></li><li><a class="active" aria-current="page" href="admin.html">Quản trị</a></li></ul></nav>
+            <a class="cart-link" href="products.html">Xem cửa hàng ↗</a>
+        </div>
+    </header>
+    <main class="admin-page page-shell" data-admin-page>
+        <div class="admin-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> TECHGEAR / BACK OFFICE</p><h1>Quản lý đơn hàng</h1><p>Theo dõi đơn mới và cập nhật tiến độ xử lý.</p></div></div>
+        <section class="admin-login" data-admin-login-panel aria-labelledby="admin-login-title">
+            <p class="eyebrow">KHU VỰC QUẢN TRỊ</p>
+            <h2 id="admin-login-title">Đăng nhập</h2>
+            <form data-admin-login-form>
+                <div class="form-group"><label for="admin-password">Mật khẩu quản trị</label><input id="admin-password" name="password" type="password" autocomplete="current-password" required></div>
+                <button class="button button-dark" type="submit">Vào trang quản trị <span aria-hidden="true">↗</span></button>
+            </form>
+            <p class="form-status" data-admin-status role="status" aria-live="polite"></p>
+        </section>
+        <section class="admin-dashboard" data-admin-dashboard hidden aria-label="Khu vực quản trị">
+            <div class="admin-toolbar"><p class="form-status" data-admin-status role="status" aria-live="polite"></p><div><button class="button button-outline" type="button" data-admin-refresh>Làm mới</button><button class="button button-dark" type="button" data-admin-logout>Đăng xuất</button></div></div>
+            <div class="admin-tabs" role="group" aria-label="Mục quản trị">
+                <button class="admin-tab is-selected" type="button" data-admin-tab="orders" aria-pressed="true">Đơn hàng</button>
+                <button class="admin-tab" type="button" data-admin-tab="products" aria-pressed="false">Sản phẩm</button>
+                <button class="admin-tab" type="button" data-admin-tab="messages" aria-pressed="false">Tin nhắn <span data-admin-messages-count>0</span></button>
+                <button class="admin-tab" type="button" data-admin-tab="feedback" aria-pressed="false">Góp ý <span data-admin-feedback-count>0</span></button>
+            </div>
+            <section class="admin-view" data-admin-view="orders" aria-label="Quản lý đơn hàng">
+                <div class="admin-metrics">
+                    <article><span>Tổng đơn</span><strong data-admin-orders-count>0</strong></article>
+                    <article><span>Chờ xác nhận</span><strong data-admin-pending-count>0</strong></article>
+                    <article><span>Doanh số đơn hiện có</span><strong data-admin-revenue>0₫</strong></article>
+                </div>
+                <div class="admin-table-wrap"><table class="admin-orders-table"><thead><tr><th>Đơn hàng</th><th>Khách hàng</th><th>Sản phẩm</th><th>Tổng tiền</th><th>Ngày đặt</th><th>Trạng thái</th></tr></thead><tbody data-admin-orders></tbody></table><p class="admin-empty" data-admin-empty hidden>Chưa có đơn hàng nào.</p></div>
+            </section>
+            <section class="admin-view" data-admin-view="products" hidden aria-label="Quản lý sản phẩm">
+                <div class="admin-section-head"><div><h2>Danh mục sản phẩm</h2><p><span data-admin-products-count>0</span> sản phẩm trong cơ sở dữ liệu</p></div></div>
+                <form class="admin-product-form" data-admin-product-form>
+                    <input type="hidden" name="id">
+                    <div class="form-row"><div class="form-group"><label for="product-name">Tên sản phẩm</label><input id="product-name" name="name" maxlength="120" required></div><div class="form-group"><label for="product-category">Danh mục</label><select id="product-category" name="category"><option value="keyboard">Bàn phím</option><option value="mouse">Chuột</option><option value="audio">Tai nghe</option><option value="accessory">Phụ kiện</option></select></div></div>
+                    <div class="form-row"><div class="form-group"><label for="product-price">Giá (₫)</label><input id="product-price" name="price" type="number" min="0" max="2000000000" step="1000" required></div><div class="form-group"><label for="product-image">Đường dẫn hình ảnh</label><input id="product-image" name="image_url" type="url" maxlength="1000" placeholder="https://..."></div></div>
+                    <div class="form-group"><label for="product-description">Mô tả</label><textarea id="product-description" name="description" rows="3" maxlength="1000"></textarea></div>
+                    <div class="admin-form-actions"><button class="button button-dark" type="submit">Thêm sản phẩm</button><button class="button button-outline" type="button" data-cancel-product-edit hidden>Hủy sửa</button></div>
+                </form>
+                <div class="admin-table-wrap"><table class="admin-orders-table admin-products-table"><thead><tr><th>Sản phẩm</th><th>Danh mục</th><th>Giá</th><th>Trạng thái</th><th>Thao tác</th></tr></thead><tbody data-admin-products></tbody></table><p class="admin-empty" data-admin-products-empty hidden>Chưa có sản phẩm nào.</p></div>
+            </section>
+            <section class="admin-view" data-admin-view="messages" hidden aria-label="Tin nhắn khách hàng"><div class="admin-section-head"><div><h2>Tin nhắn khách hàng</h2><p>Liên hệ gần đây nhất</p></div></div><div class="admin-message-list" data-admin-messages></div><p class="admin-empty" data-admin-messages-empty hidden>Chưa có tin nhắn nào.</p></section>
+            <section class="admin-view" data-admin-view="feedback" hidden aria-label="Góp ý khách hàng"><div class="admin-section-head"><div><h2>Góp ý khách hàng</h2><p>Đánh giá và phản hồi từ khách hàng</p></div></div><div class="admin-message-list" data-admin-feedback></div><p class="admin-empty" data-admin-feedback-empty hidden>Chưa có góp ý nào.</p></section>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="footer-bottom page-shell"><span>© 2026 TechGear</span><a href="index.html">Quay lại cửa hàng</a></div></footer>
+</body>
+</html>
